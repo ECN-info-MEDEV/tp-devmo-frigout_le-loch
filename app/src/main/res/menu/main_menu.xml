@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Infrastructures"
+        android:id="@+id/menu_infrastructures">
+        <menu>
+            <item android:title="Réserver un créneau"
+                android:id="@+id/menu_infrastructures_reservation"/>
+            <item android:title="Afficher le planning"
+                android:id="@+id/menu_infrastructures_planning"/>
+        </menu>
+    </item>
+    <item android:title="Entrainements"
+        android:id="@+id/menu_entrainements">
+        <menu>
+            <item android:title="Planning général"
+                android:id="@+id/menu_entrainements_planning"/>
+            <item android:title="Mes entrainements"
+                android:id="@+id/menu_entrainements_liste"/>
+        </menu>
+    </item>
+    <item android:title="Compétitions"
+        android:id="@+id/menu_competitions" >
+        <menu>
+            <item android:title="Mes compétitions"
+                android:id="@+id/menu_competitions_liste"/>
+            <item android:title="Afficher le planning"
+                android:id="@+id/menu_competitions_planning"/>
+            <item android:title="Remplir une feuille de match"
+                android:id="@+id/menu_competitions_feuille"/>
+        </menu>
+    </item>
+</menu>
