@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity_remplirFeuilleMatch">
+    android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/editTextTextPersonName11"
@@ -13,12 +12,12 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Adresse de l'arbitre"
+        android:hint="@string/adresse_de_l_arbitre"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName6"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName10"
@@ -26,12 +25,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="NOM - Prénom"
+        android:hint="@string/nom_prenom"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
@@ -39,12 +38,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Nom de l'équipe"
+        android:hint="@string/nom_de_l_equipe"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView17"
@@ -52,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="49dp"
         android:layout_marginTop="10dp"
-        android:text="Joueur 1 :"
+        android:text="@string/joueur_1"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7"
@@ -64,11 +63,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:text="à :"
+        android:text="@string/a_"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -76,7 +75,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="145dp"
         android:layout_marginTop="10dp"
-        android:text="Masculin"
+        android:text="@string/masculin"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -89,11 +88,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="47dp"
         android:layout_marginTop="68dp"
-        android:text="Match joué le : "
+        android:text="@string/match_jou_le"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
@@ -101,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="47dp"
         android:layout_marginTop="10dp"
-        android:text="Sport"
+        android:text="@string/sport"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -112,23 +111,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
-        android:text="> Remplir une feuille de match"
+        android:text="@string/remplir_une_feuille_de_match"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
-        android:text="Compétitions "
+        android:text="@string/comp_titions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -136,11 +135,11 @@
         android:layout_height="30dp"
         android:layout_marginStart="226dp"
         android:layout_marginTop="8dp"
-        android:text="Féminin"
+        android:text="@string/feminin"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox2"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:textSize="12sp" />
 
     <EditText
@@ -150,11 +149,11 @@
         android:layout_marginStart="47dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="jj/mm/aaaa"
+        android:hint="@string/jj_mm_aaaa"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:textSize="12sp" />
 
     <EditText
@@ -164,11 +163,12 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="hh:mm"
+        android:hint="@string/hh_mm"
         android:inputType="time"
         app:layout_constraintStart_toEndOf="@+id/editTextDate"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
-        tools:textSize="12sp" />
+        tools:textSize="12sp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView12"
@@ -176,11 +176,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="49dp"
         android:layout_marginTop="10dp"
-        android:text="Lieu :"
+        android:text="@string/lieu"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:textColor="@color/black" />
 
     <EditText
@@ -190,12 +190,12 @@
         android:layout_marginStart="47dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Lieu du match"
+        android:hint="@string/lieu_du_match"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
@@ -204,13 +204,14 @@
         android:layout_marginStart="47dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/black"
-        android:text="+ Ajouter un Arbitre"
+        android:text="@string/ajouter_un_arbitre"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:rippleColor="@color/white"
-        tools:textSize="12sp" />
+        tools:textSize="12sp"
+        android:onClick="addArbitre"/>
 
     <TextView
         android:id="@+id/textView13"
@@ -218,11 +219,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="49dp"
         android:layout_marginTop="10dp"
-        android:text="Arbitre - Nom :"
+        android:text="@string/arbitre_nom"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:textColor="@color/black" />
 
     <TextView
@@ -230,11 +231,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
-        android:text="Arbitre - Adresse :"
+        android:text="@string/arbitre_adresse"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:textColor="@color/black" />
 
     <EditText
@@ -243,7 +244,7 @@
         android:layout_height="36dp"
         android:layout_marginStart="35dp"
         android:ems="10"
-        android:hint="NOM Prénom du capitaine"
+        android:hint="@string/nom_prenom_du_capitaine"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName7"
@@ -257,13 +258,14 @@
         android:layout_marginStart="47dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/black"
-        android:text="+ Ajouter un joueur"
+        android:text="@string/ajouter_un_joueur"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10"
         tools:ignore="MissingConstraints"
         tools:rippleColor="@color/white"
-        tools:textSize="12sp" />
+        tools:textSize="12sp"
+        android:onClick="addJoueur"/>
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -271,12 +273,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:ems="10"
-        android:hint="N° de licence FFSU"
+        android:hint="@string/licence_ffsu"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName10"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName10"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -285,7 +287,7 @@
         android:layout_marginStart="47dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Nom de l'arbitre"
+        android:hint="@string/nom_arbitre"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -298,11 +300,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
         android:layout_marginTop="10dp"
-        android:text="Equipe : "
+        android:text="@string/equipe"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:textColor="@color/black" />
 
     <Button
@@ -311,10 +313,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:backgroundTint="@color/black"
-        android:text="+ Ajouter une équipe"
+        android:text="@string/ajouter_une_quipe"
         app:layout_constraintStart_toStartOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:textSize="12sp" />
+        tools:textSize="12sp"
+        tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -322,10 +325,10 @@
         android:layout_height="55dp"
         android:layout_marginEnd="10dp"
         android:background="@color/white"
-        android:contentDescription="Exporter"
+        android:contentDescription="@string/exporter"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
@@ -333,9 +336,10 @@
         android:layout_height="14dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="10dp"
-        android:text="Exporter"
+        android:text="@string/exporter_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:textSize="10sp" />
+        tools:textSize="10sp"
+        tools:ignore="HardcodedText,SmallSp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
