@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText userEditText;
     private EditText passwordEditText;
     public static final String EXTRA_USER = "edu.ecn.sportuniv.extra.USER";
-    public static final int TEXT_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

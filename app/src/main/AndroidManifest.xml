@@ -26,8 +26,10 @@
             android:label="@string/accueilActivity_name">
         </activity>
         <activity android:name=".FeuilleMatchActivity"
-            android:label="@string/remplirFeuilleActivity_name"
-            android:parentActivityName=".AccueilActivity">
+            android:label="@string/remplirFeuilleActivity_name">
+        </activity>
+        <activity android:name=".CompetitionActivity"
+            android:label="@string/competitionActivity_name">
         </activity>
     </application>
 

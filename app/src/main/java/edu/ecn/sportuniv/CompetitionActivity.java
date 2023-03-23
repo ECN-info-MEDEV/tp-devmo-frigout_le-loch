@@ -5,24 +5,31 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class AccueilActivity extends AppCompatActivity {
+import java.util.List;
 
-    public static final String EXTRA_USER = "edu.ecn.sportuniv.extra.USER";
-    private String userName;
+public class CompetitionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_accueil);
-        Intent intent = getIntent();
-        this.userName = intent.getStringExtra(MainActivity.EXTRA_USER);
-        TextView textView = findViewById(R.id.accueil_welcomeText);
-        String welcomeText = "BIENVENU " + this.userName.toUpperCase();
-        textView.setText(welcomeText);
+        setContentView(R.layout.activity_competition);
+        RecyclerView recyclerView = findViewById(R.id.recyclerview);
+        final CompetitionListeAdapter adapter = new CompetitionListeAdapter(new CompetitionListeAdapter.CompetitionDiff());
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        CompetitionRepository mCompetitionRepository = new CompetitionRepository(this.getApplication());
+        List<String> listeDates = mCompetitionRepository.getCompetitionDates();
+        mCompetitionViewModel = new ViewModelProvider(this).get(CompetitionViewHolder.class);
+        mWordViewModel.getAllWords().observe(this, words -> {
+            // Update the cached copy of the words in the adapter.
+            adapter.submitList(words);
+        });
     }
 
     @Override

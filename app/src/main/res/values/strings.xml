@@ -23,4 +23,8 @@
     <string name="n_de_licence_ffsu">N° de Licence FFSU :</string>
     <string name="nom_pr_nom">NOM - Prénom :</string>
     <string name="edittext4">editText4</string>
+    <string name="competition_arbo">Compétitions > planning</string>
+    <string name="competition_date">16/03/2023 (Aujourd’hui)</string>
+    <string name="competitionActivity_name">Compétitions</string>
+    <string name="ajoute_competition">+</string>
 </resources>
