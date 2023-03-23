@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -8,5 +9,33 @@
         android:id="@+id/competition_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_light" />
-</LinearLayout>
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/competition_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/competition_date"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:padding="@dimen/small_padding" />
+
+    <TextView
+        android:id="@+id/competition_lieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/competition_nom"
+        android:background="@color/gray"
+        android:gravity="start"
+        android:padding="@dimen/small_padding" />
+
+    <TextView
+        android:id="@+id/competition_horaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/competition_lieu"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:padding="@dimen/small_padding" />
+</RelativeLayout>

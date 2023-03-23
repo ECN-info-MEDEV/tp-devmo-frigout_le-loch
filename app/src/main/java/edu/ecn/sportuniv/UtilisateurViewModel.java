@@ -18,7 +18,7 @@ public class UtilisateurViewModel extends AndroidViewModel {
         mAllUtilisateurs = mRepository.getAllUtilisateurs();
     }
 
-    LiveData<List<Utilisateur>> getAllWords() { return mAllUtilisateurs; }
+    LiveData<List<Utilisateur>> getAllUtilisateurs() { return mAllUtilisateurs; }
 
     public void insert(Utilisateur user) { mRepository.insert(user); }
 

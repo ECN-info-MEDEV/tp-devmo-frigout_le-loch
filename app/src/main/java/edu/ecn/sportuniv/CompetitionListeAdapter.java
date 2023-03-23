@@ -19,7 +19,11 @@ public class CompetitionListeAdapter extends ListAdapter<Competition, Competitio
     @Override
     public void onBindViewHolder(CompetitionViewHolder holder, int position) {
         Competition current = getItem(position);
-        holder.bind(current.getDate());
+        holder.bind(current.getDate(),
+                current.getNom(),
+                current.getLieu(),
+                current.getDebut(),
+                current.getFin());
     }
 
     static class CompetitionDiff extends DiffUtil.ItemCallback<Competition> {
