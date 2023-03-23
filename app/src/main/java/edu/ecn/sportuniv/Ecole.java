@@ -12,7 +12,7 @@ import androidx.room.PrimaryKey;
  * @author Maïlys LE LOCH [mailys.le-loch@eleves.ec-nantes.fr]
  * @version 0.1
  */
-@Entity
+@Entity(tableName = "ecole_table")
 public class Ecole {
 
     @NonNull
