@@ -20,4 +20,7 @@
     <string name="menu_competitions_liste">Mes compétitions</string>
     <string name="menu_competitions_planning">Afficher le planning</string>
     <string name="menu_competitions_feuille">Remplir une feuille de match</string>
+    <string name="n_de_licence_ffsu">N° de Licence FFSU :</string>
+    <string name="nom_pr_nom">NOM - Prénom :</string>
+    <string name="edittext4">editText4</string>
 </resources>
