@@ -106,6 +106,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
+    <EditText
+        android:id="@+id/editTextSport"
+        android:layout_width="132dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Sport"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="HardcodedText,MissingConstraints,SmallSp"
+        android:textSize="12sp" />
+
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -121,7 +136,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="20dp"
         android:text="@string/comp_titions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.097"
@@ -153,22 +168,22 @@
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:textSize="12sp" />
+        tools:ignore="HardcodedText,MissingConstraints,SmallSp"
+        android:textSize="12sp"/>
 
     <EditText
         android:id="@+id/editTextTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="47dp"
         android:layout_marginTop="5dp"
         android:ems="10"
         android:hint="@string/hh_mm"
         android:inputType="time"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/editTextDate"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
-        tools:textSize="12sp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,SmallSp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -317,29 +332,24 @@
         app:layout_constraintStart_toStartOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/button3"
         tools:textSize="12sp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:onClick="addEquipe"/>
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="51dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/white"
-        android:contentDescription="@string/exporter"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints" />
 
-    <TextView
+    <Button
         android:id="@+id/textView4"
-        android:layout_width="40dp"
-        android:layout_height="14dp"
-        android:layout_marginEnd="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/holo_green_dark"
         android:text="@string/exporter_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:textSize="10sp"
-        tools:ignore="HardcodedText,SmallSp" />
+        tools:ignore="HardcodedText,SmallSp"
+        tools:textSize="8sp"
+        android:onClick="addFeuille"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

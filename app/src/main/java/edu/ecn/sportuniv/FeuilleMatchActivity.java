@@ -29,11 +29,11 @@ public class FeuilleMatchActivity extends AppCompatActivity {
     private EditText nomArbitre;
     private EditText adresseArbitre;
 
-    private ArrayList<String> listeEquipe;
+    private ArrayList<String> listeEquipe = new ArrayList<>();
 
-    private ArrayList<String> listeJoueur;
+    private ArrayList<String> listeJoueur = new ArrayList<>();
 
-    private ArrayList<String> listeArbitre;
+    private ArrayList<String> listeArbitre = new ArrayList<>();
 
 
     @Override
@@ -45,6 +45,7 @@ public class FeuilleMatchActivity extends AppCompatActivity {
         this.date = findViewById(R.id.editTextDate);
         this.heure = findViewById(R.id.editTextTime);
         this.lieu = findViewById(R.id.editTextTextPersonName2);
+        this.sport = findViewById(R.id.editTextSport);
         this.nomEquipe = findViewById(R.id.editTextTextPersonName7);
         this.nomJoueur = findViewById(R.id.editTextTextPersonName10);
         this.numeroFFSU = findViewById(R.id.editTextTextPersonName3);
@@ -85,6 +86,9 @@ public class FeuilleMatchActivity extends AppCompatActivity {
         String lieu = this.lieu.getText().toString().trim();
         feuille.setLieu(lieu);
 
+        String sport = this.sport.getText().toString().trim();
+        feuille.setSport(sport);
+
         Boolean masculin = this.masculin.isChecked();
         feuille.setGenreMasculin(masculin);
 
@@ -107,6 +111,9 @@ public class FeuilleMatchActivity extends AppCompatActivity {
         this.date.setText("");
         this.heure.setText("");
         this.lieu.setText("");
+        this.sport.setText("");
+        this.masculin.setChecked(false);
+        this.feminin.setChecked(false);
         this.nomEquipe.setText("");
         this.nomJoueur.setText("");
         this.numeroFFSU.setText("");
@@ -117,10 +124,10 @@ public class FeuilleMatchActivity extends AppCompatActivity {
     }
 
     public void addArbitre(View view){
-        String nomArbitre = this.nomArbitre.getText().toString().trim();
-        String adresseArbitre = this.adresseArbitre.getText().toString().trim();
-        listeArbitre.add(nomArbitre);
-        listeArbitre.add(adresseArbitre);
+        String nomArbitre = this.nomArbitre.getText().toString();
+        String adresseArbitre = this.adresseArbitre.getText().toString();
+        this.listeArbitre.add(nomArbitre);
+        this.listeArbitre.add(adresseArbitre);
         this.nomArbitre.setText("");
         this.adresseArbitre.setText("");
     }

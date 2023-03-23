@@ -188,9 +188,9 @@ public class FeuilleMatch {
     private String nomCapitaine;
 
     public FeuilleMatch(){
-        this.listeEquipe = null ;
-        this.listeArbitre = null;
-        this.listeJoueurs = null;
+        this.listeEquipe = "" ;
+        this.listeArbitre = "";
+        this.listeJoueurs = "";
         this.sport = "";
         this.genreFeminin = false;
         this.genreMasculin = false;
