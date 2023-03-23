@@ -15,21 +15,22 @@ import java.util.List;
 
 public class CompetitionActivity extends AppCompatActivity {
 
+    private CompetitionViewModel mCompetitionViewModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_competition);
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
+
         final CompetitionListeAdapter adapter = new CompetitionListeAdapter(new CompetitionListeAdapter.CompetitionDiff());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
         CompetitionRepository mCompetitionRepository = new CompetitionRepository(this.getApplication());
-        List<String> listeDates = mCompetitionRepository.getCompetitionDates();
-        mCompetitionViewModel = new ViewModelProvider(this).get(CompetitionViewHolder.class);
-        mWordViewModel.getAllWords().observe(this, words -> {
-            // Update the cached copy of the words in the adapter.
-            adapter.submitList(words);
-        });
+        mCompetitionViewModel = new ViewModelProvider(this).get(CompetitionViewModel.class);
+        mCompetitionViewModel.getAllCompetition().observe(this, adapter::submitList);
+
     }
 
     @Override
