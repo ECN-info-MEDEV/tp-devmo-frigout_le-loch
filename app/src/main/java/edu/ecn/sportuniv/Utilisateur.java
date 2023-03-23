@@ -60,6 +60,26 @@ public class Utilisateur {
     public String getMdp() {
         return mdp;
     }
+
+    public void setIdUtilisateur(@NonNull Integer idUtilisateur) {
+        this.idUtilisateur = idUtilisateur;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public void setMdp(String mdp) {
+        this.mdp = mdp;
+    }
 }
 
 

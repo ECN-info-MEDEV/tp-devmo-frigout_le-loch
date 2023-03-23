@@ -6,15 +6,17 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/welcomeText2"
+        android:id="@+id/accueil_welcomeText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="150dp"
-        android:text="Bienvenu Mimi"
+        android:text="@string/accueil_bvn"
         android:textSize="40sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

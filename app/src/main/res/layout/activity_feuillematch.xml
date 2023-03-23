@@ -305,7 +305,7 @@
         android:background="@color/white"
         android:contentDescription="Exporter"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:srcCompat="@drawable/exportfeuillematch.png"
+        app:srcCompat="@drawable/exportFeuilleMatch.png"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="355dp" />
 

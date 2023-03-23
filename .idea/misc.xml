@@ -8,11 +8,12 @@
         <entry key="app/src/main/res/drawable/logo.xml" value="0.2095" />
         <entry key="app/src/main/res/font/pangolin.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/accueille_activity.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/layout/activity_accueil.xml" value="0.10131712259371833" />
         <entry key="app/src/main/res/layout/activity_accueille.xml" value="0.16847826086956522" />
         <entry key="app/src/main/res/layout/activity_competition.xml" value="0.25020280920940885" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.32726593017578126" />
         <entry key="app/src/main/res/layout/page_accueille.xml" value="0.6413055419921875" />
-        <entry key="app/src/main/res/menu/main_menu.xml" value="0.20989583333333334" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

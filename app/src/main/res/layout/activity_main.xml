@@ -97,7 +97,8 @@
         android:layout_marginTop="50dp"
         android:layout_marginRight="30dp"
         android:text="@string/se_connecter"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="@color/black"
+        android:onClick="checkUser" />
 
     <TextView
         android:id="@+id/inscription"

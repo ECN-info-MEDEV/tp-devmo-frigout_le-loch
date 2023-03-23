@@ -7,4 +7,17 @@
     <string name="se_connecter">Se connecter</string>
     <string name="mdp_oublie">Mot de passe oublié</string>
     <string name="inscription">S\'INSCRIRE</string>
+    <string name="accueilActivity_name">SportUniv\'</string>
+    <string name="accueil_bvn">Bienvenu TOTO</string>
+    <string name="remplirFeuilleActivity_name">Feuille de match</string>
+    <string name="menu_infrastructures">Infrastructures</string>
+    <string name="menu_infrastructures_reservation">Faire une réservation</string>
+    <string name="menu_infrastructures_planning">Afficher le planning</string>
+    <string name="menu_entrainements">Entrainements</string>
+    <string name="menu_entrainements_planning">Planning général</string>
+    <string name="menu_entrainements_liste">Mes entrainements</string>
+    <string name="menu_competitions">Compétitions</string>
+    <string name="menu_competitions_liste">Mes compétitions</string>
+    <string name="menu_competitions_planning">Afficher le planning</string>
+    <string name="menu_competitions_feuille">Remplir une feuille de match</string>
 </resources>
