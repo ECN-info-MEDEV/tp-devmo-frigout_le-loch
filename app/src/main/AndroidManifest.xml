@@ -25,6 +25,10 @@
         <activity android:name=".AccueilActivity"
             android:label="@string/accueilActivity_name">
         </activity>
+        <activity android:name=".FeuilleMatchActivity"
+            android:label="@string/remplirFeuilleActivity_name"
+            android:parentActivityName=".AccueilActivity">
+        </activity>
     </application>
 
 </manifest>
