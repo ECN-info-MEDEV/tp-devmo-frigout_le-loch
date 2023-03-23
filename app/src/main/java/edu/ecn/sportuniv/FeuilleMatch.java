@@ -5,8 +5,6 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import java.util.ArrayList;
-
 @Entity(tableName = "feuillematch_table")
 public class FeuilleMatch {
 
@@ -49,35 +47,35 @@ public class FeuilleMatch {
     private String nomEquipe;
 
     @ColumnInfo(name="Liste Equipe")
-    private ArrayList<String>  ListeEquipe;
+    private String listeEquipe;
 
     @ColumnInfo(name="Liste Arbitre")
-    private ArrayList<String> listeArbitre;
+    private String listeArbitre;
 
     @ColumnInfo(name="Liste Joueurs")
-    private ArrayList<String> listeJoueurs;
+    private String listeJoueurs;
 
-    public ArrayList<String> getListeEquipe() {
-        return ListeEquipe;
+    public String getListeEquipe() {
+        return listeEquipe;
     }
 
-    public void setListeEquipe(ArrayList<String> listeEquipe) {
-        ListeEquipe = listeEquipe;
+    public void setListeEquipe(String listeEquipe) {
+        listeEquipe = listeEquipe;
     }
 
-    public ArrayList<String> getListeArbitre() {
+    public String getListeArbitre() {
         return listeArbitre;
     }
 
-    public void setListeArbitre(ArrayList<String> listeArbitre) {
+    public void setListeArbitre(String listeArbitre) {
         this.listeArbitre = listeArbitre;
     }
 
-    public ArrayList<String> getListeJoueurs() {
+    public String getListeJoueurs() {
         return listeJoueurs;
     }
 
-    public void setListeJoueurs(ArrayList<String> listeJoueurs) {
+    public void setListeJoueurs(String listeJoueurs) {
         this.listeJoueurs = listeJoueurs;
     }
 
@@ -190,11 +188,14 @@ public class FeuilleMatch {
     private String nomCapitaine;
 
     public FeuilleMatch(){
+        this.listeEquipe = null ;
+        this.listeArbitre = null;
+        this.listeJoueurs = null;
         this.sport = "";
         this.genreFeminin = false;
         this.genreMasculin = false;
-        this.date = null;
-        this.heure = null;
+        this.date = "";
+        this.heure = "";
         this.lieu ="";
         this.nomEquipe="";
         this.nomJoueur="";

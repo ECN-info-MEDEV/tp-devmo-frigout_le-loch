@@ -94,9 +94,9 @@ public class FeuilleMatchActivity extends AppCompatActivity {
         String date = this.date.getText().toString().trim();
         String heure = this.heure.getText().toString().trim();
 
-        feuille.setListeArbitre(this.listeArbitre);
-        feuille.setListeEquipe(this.listeEquipe);
-        feuille.setListeJoueurs(this.listeJoueur);
+        feuille.setListeArbitre(this.listeArbitre.toString());
+        feuille.setListeEquipe(this.listeEquipe.toString());
+        feuille.setListeJoueurs(this.listeJoueur.toString());
 
         FeuilleRepository feuilleRepository = new FeuilleRepository(this.getApplication());
         feuilleRepository.insert(feuille);
