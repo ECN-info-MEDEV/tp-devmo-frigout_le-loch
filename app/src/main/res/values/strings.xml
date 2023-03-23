@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">SportUniv\'</string>
     <string name="login_page_welcome">HELLO THERE, WELCOME BACK</string>
+    <string name="login_page_indications">Connectez-vous pour continuer</string>
     <string name="hint_utilisateur">Nom d\'utilisateur</string>
     <string name="hint_password">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="mdp_oublie">Mot de passe oublié</string>
+    <string name="inscription">S\'INSCRIRE</string>
 </resources>
