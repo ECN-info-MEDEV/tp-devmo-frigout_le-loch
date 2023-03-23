@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/menu_infrastructures"
+        android:id="@+id/menu_infrastructures">
+        <menu>
+            <item android:title="@string/menu_infrastructures_reservation"
+                android:id="@+id/menu_infrastructures_reservation"/>
+            <item android:title="@string/menu_infrastructures_planning"
+                android:id="@+id/menu_infrastructures_planning"/>
+        </menu>
+    </item>
+    <item android:title="@string/menu_entrainements"
+        android:id="@+id/menu_entrainements">
+        <menu>
+            <item android:title="@string/menu_entrainements_planning"
+                android:id="@+id/menu_entrainements_planning"/>
+            <item android:title="@string/menu_entrainements_liste"
+                android:id="@+id/menu_entrainements_liste"/>
+        </menu>
+    </item>
+    <item android:title="@string/menu_competitions"
+        android:id="@+id/menu_competitions" >
+        <menu>
+            <item android:title="@string/menu_competitions_liste"
+                android:id="@+id/menu_competitions_liste"/>
+            <item android:title="@string/menu_competitions_planning"
+                android:id="@+id/menu_competitions_planning"/>
+            <item android:title="@string/menu_competitions_feuille"
+                android:id="@+id/menu_competitions_feuille"/>
+        </menu>
+    </item>
+</menu>
